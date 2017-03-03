@@ -13,17 +13,13 @@ var twitter = TweetPublisher.twitter = new Twit({
 	consumer_secret: nconf.get('Svf9yV9jPUdnAMS8jFZPwnEgXkvl0SGnyWzPcBnXSYGJudGPvI'),
 	access_token: nconf.get('836504229737033728-nEAetWh4ehuOfQofnNuCQMPsRHgOrJN'),
 	access_token_secret: nconf.get('LhgrG28ZWQPEnMo6xgQprcKfgDg5OasKjhjh8dmXc9sjZ')
-	consumer_key: nconf.get('TWITTER_CONSUMER_KEY'),
-	consumer_secret: nconf.get('TWITTER_CONSUMER_SECRET'),
-	access_token: nconf.get('TWITTER_ACCESS_TOKEN'),
-	access_token_secret: nconf.get('TWITTER_TOKEN_SECRET')
+	
 });
 
 var pubnub = TweetPublisher.pubnub = Pubnub({
 	publish_key: nconf.get('pub-c-f738041e-69b1-4718-8103-0e02bd99adbc'),
 	subscribe_key: nconf.get('sub-c-32f33480-fd21-11e6-afcf-02ee2ddab7fe')
-	publish_key: nconf.get('PUBNUB_PUBLISH_KEY'),
-	subscribe_key: nconf.get('PUBNUB_SUBSCRIBE_KEY')
+
 });
 
 var stream, cachedTweet, publishInterval;
