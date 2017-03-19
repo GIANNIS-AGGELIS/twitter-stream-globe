@@ -98,7 +98,8 @@
 		height = height ? height : 0;
 
 	  var vector3 = new THREE.Vector3(0, 0, 0);
-
+	  if(lon >= -17 && lat >= 36 && lon <= 33 && lat <= 33)
+	  {
 	  lon = lon + 10;
 	  lat = lat - 2;
 
@@ -111,6 +112,7 @@
 	  vector3.z = Math.sin(phi) * Math.sin(theta) * rad;
 
 	  return vector3;
+	  }
 	};
 
 	/**
