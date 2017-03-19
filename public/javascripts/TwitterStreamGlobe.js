@@ -98,7 +98,7 @@
 		height = height ? height : 0;
 
 	  var vector3 = new THREE.Vector3(0, 0, 0);
-	  if(lon >= -17 && lat >= 36 && lon <= 71 && lat <= 33)
+	  if(lon >= -17 && lat >= 36 && lon <= 33 && lat <= 71)
 	  {
 	  lon = lon + 10;
 	  lat = lat - 2;
@@ -165,7 +165,7 @@
 	 */ 
 	function render () {
 
-		earthMesh.rotation.y = earthMesh.rotation.y - 0.015;
+		earthMesh.rotation.y = earthMesh.rotation.y - 0.050;
 		
 	  renderer.autoClear = false;
 	  renderer.clear();
