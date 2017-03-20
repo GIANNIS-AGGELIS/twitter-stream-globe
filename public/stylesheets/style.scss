@@ -3,7 +3,11 @@
 
 $twitter-color: #55ACEE;
 $panel-color: #222;
-$color-negative: #990000;
+$color-wrath: #990000;
+$color-angre: #FF0000;
+$color-sorrow: #808080;
+$color-happiness: #FFFF00;
+$color-security: #008000;
 $color-positive: #0000FF;
 $color-neutral: #444;
 $color-text: #CCC;
@@ -216,12 +220,23 @@ a {
 		font-size: 12px;
 	}
 
-	&.negative {
-		border-color: $color-negative;
+	&.wrath {
+		border-color: $color-wrath;
 	}
-
-	&.positive {
-		border-color: $color-positive;
+	&.angre {
+		border-color: $color-angre;
+	}
+	&.sorrow {
+		border-color: $color-sorrow;
+	}
+	&.happiness {
+		border-color: $color-happiness;
+	}
+	&.security {
+		border-color: $color-security;
+	}
+	&.confidence {
+		border-color: $color-confidence;
 	}
 }
 
