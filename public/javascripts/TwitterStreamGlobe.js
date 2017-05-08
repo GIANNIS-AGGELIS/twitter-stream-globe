@@ -15,7 +15,7 @@
 
 	/**
 	 *	Initiates WebGL view with Three.js
-	 *
+	 */
 	TwtrGlobe.init = function () {
 		
 		if (!this.supportsWebGL()) {
@@ -40,18 +40,18 @@
 		scene.add(camera);
 
 		addEarth();
-		addStats();
+		//addStats();
 		animate();
 
 		window.addEventListener ('resize', onWindowResize);
 	}
- 	*/
+ 
 	
 	var earthMesh, beaconHolder;
 
 	/**
 	 *	Creates the Earth sphere
-	 *
+	 */
 	function addEarth () {
 
 	  var sphereGeometry = new THREE.SphereGeometry(600, 50, 50);
@@ -75,7 +75,7 @@
 	  earthMesh.add(beaconHolder);
 	}
 
-	*/
+	
 	function initMap() 
 	{
   		var myLatlng = new google.maps.LatLng(0.0, 0.0);
