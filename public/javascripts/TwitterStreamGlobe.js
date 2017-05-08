@@ -15,7 +15,7 @@
 
 	/**
 	 *	Initiates WebGL view with Three.js
-	 */
+	 *
 	TwtrGlobe.init = function () {
 		
 		if (!this.supportsWebGL()) {
@@ -45,7 +45,8 @@
 
 		window.addEventListener ('resize', onWindowResize);
 	}
-
+ 	*/
+	
 	var earthMesh, beaconHolder;
 
 	/**
