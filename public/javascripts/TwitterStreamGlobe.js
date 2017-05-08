@@ -50,7 +50,7 @@
 
 	/**
 	 *	Creates the Earth sphere
-	 */
+	 *
 	function addEarth () {
 
 	  var sphereGeometry = new THREE.SphereGeometry(600, 50, 50);
@@ -74,6 +74,7 @@
 	  earthMesh.add(beaconHolder);
 	}
 
+	*/
 	var stats;
 
 	/**
