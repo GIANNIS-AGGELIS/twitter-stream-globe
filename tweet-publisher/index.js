@@ -3,6 +3,7 @@ var Twit = require('twit');
 var Pubnub = require('pubnub');
 var fs = require('fs');
 var nconf = require('nconf');
+var strVar="";
 
 nconf.file({ file: 'config.json' }).env();
 
@@ -19,6 +20,9 @@ var pubnub = TweetPublisher.pubnub = Pubnub({
 	publish_key: nconf.get('PUBNUB_PUBLISH_KEY'),
 	subscribe_key: nconf.get('PUBNUB_SUBSCRIBE_KEY')
 });
+
+strVar += "<script src=\"https:\/\/maps.googleapis.com\/maps\/api\/js?key=\" + MY_GOOGLE_API_KEY + \"&callback=initMap\" async defer><\/script> ";
+
 
 var stream, cachedTweet, publishInterval;
 
