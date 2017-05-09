@@ -40,7 +40,7 @@
 		scene.add(camera);
 
 		//addEarth();
-		addStats();
+		//addStats();
 		animate();
 		
 		//test
