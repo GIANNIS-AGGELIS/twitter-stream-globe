@@ -48,10 +48,7 @@
 
 		window.addEventListener ('resize', onWindowResize);
 	}
- 	#map {
- 	 height: 400px;
- 	 width: 100%;
-	}
+ 	
 	
 	var earthMesh, beaconHolder;
 
