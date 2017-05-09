@@ -42,6 +42,9 @@
 		addEarth();
 		//addStats();
 		animate();
+		
+		//test
+		initMap();
 
 		window.addEventListener ('resize', onWindowResize);
 	}
@@ -74,6 +77,24 @@
 	  beaconHolder = new THREE.Object3D();
 	  earthMesh.add(beaconHolder);
 	}
+	
+	
+	
+	/**
+	* Creates the map 
+	*/
+	
+	function initMap() {
+  	  var myLatlng = new google.maps.LatLng(0.0, 0.0);
+  	  var mapOptions = {
+     	    zoom: 2,
+    	    center: myLatlng,
+            mapTypeId: 'hybrid'
+  	 };
+  	var map = new google.maps.Map(document.getElementById('map'),mapOptions);
+	}
+
+	
 
 	
 	function initMap() 
