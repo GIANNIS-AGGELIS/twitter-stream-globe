@@ -39,8 +39,8 @@
 		scene = new THREE.Scene();
 		scene.add(camera);
 
-		addEarth();
-		//addStats();
+		//addEarth();
+		addStats();
 		animate();
 		
 		//test
