@@ -41,7 +41,7 @@
 
 		//addEarth();
 		//addStats();
-		animate();
+		//animate();
 		
 		//test
 		initMap();
