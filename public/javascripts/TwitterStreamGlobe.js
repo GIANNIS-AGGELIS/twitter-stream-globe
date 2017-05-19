@@ -93,22 +93,6 @@
   	 };
   	var map = new google.maps.Map(document.getElementById('map'),mapOptions);
 	}
-
-	
-
-	
-	function initMap() 
-	{
-  		var myLatlng = new google.maps.LatLng(0.0, 0.0);
-  		var mapOptions = {
-    		zoom: 2,
-    		center: myLatlng,
-    		mapTypeId: 'hybrid'
-  		};
-  		var map = new google.maps.Map(document.getElementById('map'),
-    		mapOptions);
-	}
-
 	
 	var stats;
 
